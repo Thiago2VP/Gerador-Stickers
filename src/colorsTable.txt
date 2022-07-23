@@ -1,0 +1,9 @@
+Cor	        Código SGR cor do texto	    Código SGR cor de fundo
+Preta	    30	                        40
+Vermelha	31	                        41
+Verde	    32	                        42
+Amarelo	    33	                        43
+Azul	    34	                        44
+Magenta	    35	                        45
+Ciano	    36	                        46
+Branca	    37	                        47
