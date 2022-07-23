@@ -14,14 +14,22 @@ Crie uma figurinha a partir de uma api disponível no projeto ou de uma imagem e
 <br>
 <h2>📘 Descrição detalhada</h2>
 <p>Aplicação java com a comunicação feita em terminal, ao rodar a classe App será apresentado um menu de opções, de onde todas as ações do projeto podem ser feitas</p>
+
+![stick-app-apre](https://user-images.githubusercontent.com/72038599/180617145-c52e656f-7850-4eb6-af82-f0edae2fd9ce.gif)
+
 <br>
 <h2>📎 As APIs</h2>
 <p>No menu as opções IMDB, Nasa e Linguagens de programação se referem a APIs já linkadas ao projeto, cada uma delas com um grupo de elementos que possuem título e imagem.</p>
-<p>As imagens são geradas automaticamente, sendo que as da Nasa não possuem nada escrito, as do IMDB tem frases já definidas relacionadas à nota do filme ou série e das linguagens de programação à posição no ranking, no caso dos elementos do IMDb além de criar imagens é possível listar todos os elementos no terminal e ser dada uma avaliação que não tem efeito algum por enquanto</p>
+<p>As imagens são geradas automaticamente, sendo que as da Nasa não possuem nada escrito, as do IMDB tem frases já definidas relacionadas à nota do filme ou série e das linguagens de programação à posição no ranking, no caso dos elementos do IMDb além de criar imagens é possível listar todos os elementos no terminal e ser dada uma avaliação que não tem efeito algum por enquanto.</p>
 <br>
 <h2>📷 Imagens dadas</h2>
-<p>Nessa opção você cria a figurinha, primeiro escolhe se a imagem é de dentro do seu dispositivo ou um link de imagem, se for do dispositivo deve digitar todo o caminho até o arquivo além do nome dele (/home/user/foto.jpg ou C:/Documentos/foto.jpg), depois disso escolhe a frase e a cor do texto</p>
+<p>Nessa opção você cria a figurinha, primeiro escolhe se a imagem é de dentro do seu dispositivo ou um link de imagem, se for do dispositivo deve digitar todo o caminho até o arquivo além do nome dele (/home/user/foto.jpg ou C:/Documentos/foto.jpg), depois disso escolhe a frase e a cor do texto.</p>
+
+![link-image-1](https://user-images.githubusercontent.com/72038599/180617950-92c360ec-8fdf-46de-9355-463f8e127ea1.gif)
+
+![link-image-2](https://user-images.githubusercontent.com/72038599/180617969-eb684882-23ce-4c4f-9a84-bfec6d48a324.gif)
+
 <p>Não tem quebra de linha, então quanto mais longa a frase menor ela fica na imagem</p>
 <br>
 <h2>🛠️ Abrir e rodar o projeto</h2>
-<p>Após baixar o projeto, você pode abri-lo com uma IDE Java e rodar a função em App.java</p> 
+<p>Após baixar o projeto, você pode abri-lo com uma IDE Java e rodar a função em App.java, as imagens são salvas em uma pasta dentro do projeto chamada saida</p> 
