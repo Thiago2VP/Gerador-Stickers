@@ -42,7 +42,7 @@ public class InterfaceUser {
         try (Scanner entrada = new Scanner(System.in)) {
             System.out.printf("\n\u001b[1m\n\u001b[32mDigite o Número referente ao que deseja\u001b[m\n");
             System.out.printf("\u001b[1m\u001b[32m---------------------------------------------------------------------------------\u001b[m");
-            System.out.printf("\n\u001b[1m\u001b[35m1: IMDB  \u001b[36m2: Nasa  \u001b[33m3: Linguagens de Programação  \u001b[34m4: Figurinha Imagem do Computador\u001b[m\n");
+            System.out.printf("\n\u001b[1m\u001b[35m1: IMDB  \u001b[36m2: Nasa  \u001b[33m3: Linguagens de Programação  \u001b[34m4: Imagem dada\u001b[m\n");
             String opt = entrada.nextLine();
             int numOpt = Integer.parseInt(opt);
             if(numOpt==1){
@@ -68,7 +68,7 @@ public class InterfaceUser {
                         TrataFilmes.avalie(conteudos);
                     } else if(numOpt==3){
                         System.out.printf("\n\u001b[1m\n\u001b[32mGerar Figurinhas escolhido\u001b[m\n\n");
-                        //new ImagemDaListaDeFilmes().criaStickerDaListaDeFilmes(conteudos);
+                        new ImagemDaListaDeFilmes().criaStickerDaListaDeFilmes(conteudos);
                     } else{
                         System.out.printf("\n\u001b[1m\n\u001b[32mDigite um Número váido\u001b[m\n\n");
                     }
@@ -171,10 +171,20 @@ public class InterfaceUser {
                 new ImagemDaListaLinguagens().criaStickerDaListaDeLing(conteudos);
                 
             } else if(numOpt==4){
-                System.out.printf("\n\u001b[1m\n\u001b[32mFigurinha Imagem do Computador escolhido\u001b[m\n\n");
-                
-                var criadoraMaquina = new ImagemDaMaquina();
-                criadoraMaquina.criaStickerDaMaquina();
+                System.out.printf("\n\u001b[1m\n\u001b[32mImagem dada escolhido\u001b[m\n");
+                System.out.printf("\n\u001b[1m\n\u001b[32mO que Deseja usar?\n\u001b[m");
+                System.out.printf("\u001b[1m\n\u001b[33m1: Imagem do Computador  2: Imagens da Internet\n\u001b[m");
+                opt = entrada.nextLine();
+                numOpt = Integer.parseInt(opt);
+                if (numOpt==1){
+                    var criadoraMaquina = new ImagemDaMaquina();
+                    criadoraMaquina.criaStickerDaMaquina();
+                } else if(numOpt==2){
+                    var criadoraMaquina = new ImagemDaMaquina();
+                    criadoraMaquina.criaStickerDaInternet();
+                } else{
+                    System.out.printf("\n\u001b[1m\n\u001b[32mDigite um Número váido\u001b[m\n\n");    
+                }
             } else{
                 System.out.printf("\n\u001b[1m\n\u001b[32mDigite um Número váido\u001b[m\n\n");
             }
